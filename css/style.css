@@ -1,0 +1,582 @@
+/* BASE STYLES
+   ============================= */
+
+body {
+	background: #1e252d url('../img/bg.jpg') no-repeat center;
+	background-size:cover;
+	width: 100%;
+	background-attachment: fixed;
+	font: 1em/1.5 sans-serif;
+	margin: 0;
+	color: #212931;
+}
+
+h1 {
+	font-size: 3em; /* 48px / 16px */
+	max-width: 408px;
+	color: #fff;
+	padding: 15px;
+}
+
+h1,
+h2 {
+	font-weight: 900;
+}
+
+a {
+	text-decoration: none;
+}
+
+span {
+	display: block;
+}
+
+header {
+	width: 90%;
+	padding: 120px 0 20px;
+}
+
+/* intro text */
+header p {
+	color: #fff;
+}
+
+nav {
+	padding-bottom: 3px;
+	max-width: 98%;
+}
+
+ul {
+	margin-bottom: 0;
+	list-style: none;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	margin: 10px 0;
+}
+
+footer {
+	padding: 36px 0 40px;
+}
+
+footer, footer a {
+	color: rgba(255, 255, 255, 0.25);
+}
+
+footer li {
+	margin-bottom: 12px;
+}
+
+
+
+/* PSEUDO CLASSES
+   ============================= */
+
+.links li:hover {
+	background: rgba(255, 255, 255, .3);
+}   
+
+.links a:active {
+	color: rgb(24, 191, 239);
+}
+
+/* teal text for links */
+#main h2 a:hover,
+header a:hover,
+footer a:hover,
+.contact p a:hover {
+	color: rgb(24, 191, 239); /* #18BFEF */
+	border: none;
+}
+
+.button:hover {
+	color: rgb(24, 191, 239);
+	border-color: rgb(24, 191, 239);
+}
+
+/* current page indicator hover class */
+nav .selected:hover {
+	background: #fff;
+} 
+
+nav .selected a:hover {
+	color: rgb(24, 191, 239);
+}
+
+nav .selected a:active {
+	color: #212931;
+}
+
+/* nav social media link hover classes */
+.twitter:hover {
+	background: url('../img/twitter-blue.png') no-repeat center;
+	background-size: 20px 20px;
+}
+.facebook:hover {
+	background: url('../img/facebook-blue.png') no-repeat center;
+	background-size: 20px 20px;
+}
+.instagram:hover {
+	background: url('../img/instagram-blue.png') no-repeat center;
+	background-size: 20px 20px;
+}
+.github:hover {
+	background: url('../img/github-blue.png') no-repeat center;
+	background-size: 20px 20px;
+}
+
+/* contact form social media link hover classes */
+.twitter-gray:hover {
+	background: url('../img/twitter-blue-circle.png') no-repeat center;
+	background-size: 30px 30px;
+}
+.facebook-gray:hover {
+	background: url('../img/facebook-blue-circle.png') no-repeat center;
+	background-size: 30px 30px;
+}
+.instagram-gray:hover {
+	background: url('../img/instagram-blue-circle.png') no-repeat center;
+	background-size: 30px 30px;
+}
+.github-gray:hover {
+	background: url('../img/github-blue-circle.png') no-repeat center;
+	background-size: 30px 30px;
+}
+
+
+
+/* ID SELECTORS
+   ============================= */
+
+#wrapper {
+	max-width: 100%;
+}
+
+#main {
+	background: #fff;
+}
+
+#wrapper,
+header,
+nav,
+h1 {
+	margin: auto;
+}
+
+#main h2 a,
+.button {
+	color: inherit;
+}
+
+/* intro and date text */
+#main span,
+header, p {
+	font-size: .9166em; /* 14.6667px / 16px */
+	font-family: Merriweather, sans-serif;
+	line-height: 2.125; /* 34px / 16px */
+}
+
+
+
+
+/* MAIN STYLES
+   ============================= */
+
+header,
+.post-featured,
+.posts article,
+nav,
+footer {
+	text-align: center;
+}
+
+h1,
+h2,
+.links,
+.button,
+.contact h3,
+footer {
+	font-family: 'Source Sans Pro', sans-serif;
+	letter-spacing: 0.075em;
+	line-height: 1.1;
+	font-weight: bolder;
+}
+
+/* capitalized text */
+.post-featured h2 a,
+.posts h2,
+.button,
+nav .links a,
+h1,
+.contact h3,
+footer  {
+	text-transform: uppercase;
+}
+
+/* justified text */
+.post-featured .justify {
+	font-family: serif;
+	text-align: justify;
+	line-height: 3em;
+	width: 100%;
+}
+
+/*article text */
+.posts p {
+	font-family: serif;
+	font-size: 1.2em;
+	font-weight: lighter;
+}
+
+.links a {
+	color: #fff;
+	display: block;
+	padding: 15px;
+}
+
+.links li {
+	margin-bottom: 1px;
+}
+
+/* nav links borders and background */
+.links li,
+.icons {
+	background: rgba(255, 255, 255, .2);
+	border: 1px solid #212931;
+	border-radius: 8px;
+}
+
+/* current page indicator */
+.links .selected {
+	background: #fff;
+}
+.links .selected a {
+	color: #212931;
+}
+
+.label {
+	display: none;
+}
+
+.icons {
+	padding: 15px;
+	margin: 0;
+}
+.icons li {
+	display: inline-block;
+}
+
+.icons li a {
+	padding: 10px 15px;
+	margin: 0 10px;
+}
+
+.post-featured h2 a {
+	font-size: 2.25rem; /* 36px / 16px */
+}
+
+.post-featured {
+	padding: 4rem 2rem 3rem;
+}
+
+.posts article {
+	padding: 30px;
+	border-top: 2px solid #eee;
+}
+
+/* links with dotted underlining */
+.d-link {
+	color: inherit;
+	border-bottom: 1px dotted;
+	border-top-color: #eee;
+}
+
+/* full story button */
+.button {
+	display: inline-block;
+	border: 2px solid #000;
+	/*width: 140px;*/
+	width: 90%;
+	padding: 12px 0;
+	margin-top: 20px;
+	font-size: .85rem;
+}
+
+/* html form */
+.form {
+	background-color: rgb(245, 245, 245);
+	margin: 0;
+	padding: 20px;
+	color: rgb(133, 121, 129);
+	text-align: center;
+	font-size: 3em;
+}
+
+.form h4 {
+	width: 40%;
+	margin: auto;
+}
+
+/* contact form */
+.contact {
+	background-color: rgb(245, 245, 245);
+	font-size: 0.9em;
+	color: rgb(144, 148, 152);
+}
+
+.contact p, .contact h3 {
+	margin: 0;
+	display: inline-block;
+}
+
+.contact p {
+	width: 200px;
+}
+.contact section {
+	padding: 30px;
+}
+.contact h3 {
+	color: rgb(133, 121, 129);
+	width: 80px;
+	margin: 0;
+	font-size: .9em;
+}
+
+/* contact form borders */
+.t-border {
+	border-top: 2px solid #e2e2e2;
+	border-left: 2px solid #e2e2e2;
+	border-right: 2px solid #e2e2e2;
+}
+
+/* nav icons */
+.twitter {
+	background: url('../img/twitter.png') no-repeat center;
+	background-size: 20px 20px;
+}
+.facebook {
+	background: url('../img/facebook.png') no-repeat center;
+	background-size: 20px 20px;
+}
+.instagram {
+	background: url('../img/instagram.png') no-repeat center;
+	background-size: 20px 20px;
+}
+.github {
+	background: url('../img/github.png') no-repeat center;
+	background-size: 20px 20px;
+}
+
+
+/* contact form icons */
+.contact-icons {
+	width: 213px;
+	margin: 0;
+	display: inline-block;
+	margin-left: -15px;
+}
+.contact-icons li {
+	display: inline-block;
+	padding: 10px;
+}
+.contact-icons a {
+	padding: 15px;
+}
+.twitter-gray {
+	background: url('../img/twitter-gray.png') no-repeat center;
+	background-size: 30px 30px;
+}
+.facebook-gray {
+	background: url('../img/facebook-gray.png') no-repeat center;
+	background-size: 30px 30px;
+}
+.instagram-gray {
+	background: url('../img/instagram-gray.png') no-repeat center;
+	background-size: 30px 30px;
+}
+.github-gray {
+	background: url('../img/github-gray.png') no-repeat center;
+	background-size: 30px 30px;
+}
+
+.copyright {
+	font-size: .78em;
+}
+
+
+
+/* FLOAT CLEARFIX
+   ============================= */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* MEDIA QUERIES
+   ============================= */
+
+@media (min-width: 481px) {
+	#wrapper,
+	nav {
+		width: 90%;
+	}
+
+	.button {
+		width: 139px;
+	}
+
+	.copyright li {
+		display: inline-block;
+	}
+
+	.spacer {
+		padding-left: 10px;
+		margin-left: 5px;
+		border-left: 2px solid rgba(255, 255, 255, 0.25);
+	}
+
+	header p {
+		width: 80%;
+		margin: auto;
+	}
+}
+
+/* two-column article posts layout */
+@media (min-width: 737px) {
+	
+	body {
+		background-position: 0% 0%;
+	}
+
+	.posts article {
+		box-sizing: border-box;
+		float: left;
+		width: 50%;
+		padding: 60px;
+	}
+
+	.post-featured {
+		padding: 60px;
+	}
+
+	.post-featured h2 a {
+		font-size: 3.625rem /* 58px / 16px */
+	}
+
+	.posts article:nth-child(even) {
+		border-left: .5px solid #eee;
+	}
+	.posts article:nth-child(odd) {
+		border-right: .5px solid #eee;
+	}
+
+	h1 {
+		font-size: 4.5rem;
+	}
+
+	header p {
+		font-size: 1.1rem;
+	}
+
+	.contact section {
+		padding: 50px;
+	}
+}
+
+
+@media (min-width: 981px) {
+
+	#wrapper,
+	nav {
+		max-width: 1125px;
+	}
+	
+	nav {
+		margin-top: 50px;
+		padding: 0;
+		background: rgba(255, 255, 255, .2);
+		text-align: left;
+	}
+	
+	header p {
+		width: 65%;
+	}
+
+	.links {
+		font-size: .8em;
+		display: inline-block;
+		margin: 0;
+	}
+
+	.links li, .icons {
+		background: none;
+		display: inline-block;
+		border: none;
+		border-radius: 0;
+		margin: 0;
+	}
+
+	.links a {
+		padding: 20px;
+	}
+
+	.links li {
+		padding: 5px 10px;
+	}
+
+	.links li:nth-child(2n) {
+		margin: 0 -4px;
+	}
+
+	.icons {
+		float: right;
+		margin-top: 7px;
+	}
+
+	.post-featured {
+		padding: 110px 128px 90px;
+		font-size: 1.2rem;
+	}
+
+	.post-featured h2 {
+		width: 70%;
+		margin: auto;
+		padding-top: 30px;
+	}
+
+	.post-featured p {
+		width: 60%;
+		margin: 30px auto;
+		margin-bottom: 40px;
+		line-height: 3rem;
+	}
+
+	.post-featured .button {
+		margin-top: 60px;
+	}
+
+	.communication {
+		background: rgb(245, 245, 245);
+	}
+	
+	.form, .contact {
+		box-sizing: border-box;
+	}
+	
+	.form {
+		float: left;
+		width: 50%;
+		margin-top: 80px;
+	}
+
+	.contact {
+		float: right;
+		width: 50%;
+	}
+}
